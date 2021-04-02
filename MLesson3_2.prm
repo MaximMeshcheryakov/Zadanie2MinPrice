@@ -1,0 +1,16 @@
+[parameter:Host]
+CurrentValue="http://localhost:1080"
+IsEncrypt="NO"
+IsServer="NO"
+OriginalValue=""
+ParamName="Host"
+Prompt=""
+Type="Custom"
+[parameter:Number]
+CurrentValue=""
+IsEncrypt="NO"
+IsServer="NO"
+OriginalValue=""
+ParamName="Number"
+Prompt=""
+Type="Custom"

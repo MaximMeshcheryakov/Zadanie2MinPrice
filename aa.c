@@ -1,0 +1,182 @@
+aa()
+{
+	/* Flights */
+
+	web_url("Search Flights Button", 
+		"URL={Host}/cgi-bin/welcome.pl?page=search", 
+		"TargetFrame=body", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer={Host}/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t3.inf", 
+		"Mode=HTML", 
+		LAST);
+
+
+	web_submit_data("reservations.pl", 
+		"Action={Host}/cgi-bin/reservations.pl", 
+		"Method=POST", 
+		"TargetFrame=", 
+		"RecContentType=text/html", 
+		"Referer={Host}/cgi-bin/reservations.pl?page=welcome", 
+		"Snapshot=t4.inf", 
+		"Mode=HTML", 
+		ITEMDATA, 
+		"Name=advanceDiscount", "Value=0", ENDITEM, 
+		"Name=depart", "Value=Denver", ENDITEM, 
+		"Name=departDate", "Value=04/01/2021", ENDITEM, 
+		"Name=arrive", "Value=San Francisco", ENDITEM, 
+		"Name=returnDate", "Value=04/02/2021", ENDITEM, 
+		"Name=numPassengers", "Value=2", ENDITEM, 
+		"Name=seatPref", "Value=None", ENDITEM, 
+		"Name=seatType", "Value=Coach", ENDITEM, 
+		"Name=.cgifields", "Value=roundtrip", ENDITEM, 
+		"Name=.cgifields", "Value=seatType", ENDITEM, 
+		"Name=.cgifields", "Value=seatPref", ENDITEM, 
+		"Name=findFlights.x", "Value=46", ENDITEM, 
+		"Name=findFlights.y", "Value=16", ENDITEM, 
+		LAST);
+
+	/* Continue2 */
+
+	web_submit_data("reservations.pl_2", 
+		"Action={Host}/cgi-bin/reservations.pl", 
+		"Method=POST", 
+		"TargetFrame=", 
+		"RecContentType=text/html", 
+		"Referer={Host}/cgi-bin/reservations.pl", 
+		"Snapshot=t5.inf", 
+		"Mode=HTML", 
+		ITEMDATA, 
+		"Name=outboundFlight", "Value=060;202;04/01/2021", ENDITEM, 
+		"Name=numPassengers", "Value=2", ENDITEM, 
+		"Name=advanceDiscount", "Value=0", ENDITEM, 
+		"Name=seatType", "Value=Coach", ENDITEM, 
+		"Name=seatPref", "Value=None", ENDITEM, 
+		"Name=reserveFlights.x", "Value=23", ENDITEM, 
+		"Name=reserveFlights.y", "Value=9", ENDITEM, 
+		LAST);
+
+	/* Continue3 */
+
+	web_submit_data("reservations.pl_3", 
+		"Action={Host}/cgi-bin/reservations.pl", 
+		"Method=POST", 
+		"TargetFrame=", 
+		"RecContentType=text/html", 
+		"Referer={Host}/cgi-bin/reservations.pl", 
+		"Snapshot=t6.inf", 
+		"Mode=HTML", 
+		ITEMDATA, 
+		"Name=firstName", "Value=Jojo", ENDITEM, 
+		"Name=lastName", "Value=Bean", ENDITEM, 
+		"Name=address1", "Value=", ENDITEM, 
+		"Name=address2", "Value=", ENDITEM, 
+		"Name=pass1", "Value=Jojo Bean", ENDITEM, 
+		"Name=pass2", "Value=", ENDITEM, 
+		"Name=creditCard", "Value=", ENDITEM, 
+		"Name=expDate", "Value=", ENDITEM, 
+		"Name=oldCCOption", "Value=", ENDITEM, 
+		"Name=numPassengers", "Value=2", ENDITEM, 
+		"Name=seatType", "Value=Coach", ENDITEM, 
+		"Name=seatPref", "Value=None", ENDITEM, 
+		"Name=outboundFlight", "Value=060;202;04/01/2021", ENDITEM, 
+		"Name=advanceDiscount", "Value=0", ENDITEM, 
+		"Name=returnFlight", "Value=", ENDITEM, 
+		"Name=JSFormSubmit", "Value=off", ENDITEM, 
+		"Name=.cgifields", "Value=saveCC", ENDITEM, 
+		"Name=buyFlights.x", "Value=65", ENDITEM, 
+		"Name=buyFlights.y", "Value=6", ENDITEM, 
+		LAST);
+
+	/* Flights2 */
+
+	web_url("Search Flights Button_2", 
+		"URL={Host}/cgi-bin/welcome.pl?page=search", 
+		"TargetFrame=body", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer={Host}/cgi-bin/nav.pl?page=menu&in=flights", 
+		"Snapshot=t7.inf", 
+		"Mode=HTML", 
+		LAST);
+
+	/* Continue1_2 */
+
+	web_submit_data("reservations.pl_4", 
+		"Action={Host}/cgi-bin/reservations.pl", 
+		"Method=POST", 
+		"TargetFrame=", 
+		"RecContentType=text/html", 
+		"Referer={Host}/cgi-bin/reservations.pl?page=welcome", 
+		"Snapshot=t8.inf", 
+		"Mode=HTML", 
+		ITEMDATA, 
+		"Name=advanceDiscount", "Value=0", ENDITEM, 
+		"Name=depart", "Value=Denver", ENDITEM, 
+		"Name=departDate", "Value=04/01/2021", ENDITEM, 
+		"Name=arrive", "Value=Frankfurt", ENDITEM, 
+		"Name=returnDate", "Value=04/02/2021", ENDITEM, 
+		"Name=numPassengers", "Value=1", ENDITEM, 
+		"Name=seatPref", "Value=None", ENDITEM, 
+		"Name=seatType", "Value=Coach", ENDITEM, 
+		"Name=.cgifields", "Value=roundtrip", ENDITEM, 
+		"Name=.cgifields", "Value=seatType", ENDITEM, 
+		"Name=.cgifields", "Value=seatPref", ENDITEM, 
+		"Name=findFlights.x", "Value=31", ENDITEM, 
+		"Name=findFlights.y", "Value=4", ENDITEM, 
+		LAST);
+
+	/* Continue2_2 */
+
+	web_submit_data("reservations.pl_5", 
+		"Action={Host}/cgi-bin/reservations.pl", 
+		"Method=POST", 
+		"TargetFrame=", 
+		"RecContentType=text/html", 
+		"Referer={Host}/cgi-bin/reservations.pl", 
+		"Snapshot=t9.inf", 
+		"Mode=HTML", 
+		ITEMDATA, 
+		"Name=outboundFlight", "Value=010;386;04/01/2021", ENDITEM, 
+		"Name=numPassengers", "Value=1", ENDITEM, 
+		"Name=advanceDiscount", "Value=0", ENDITEM, 
+		"Name=seatType", "Value=Coach", ENDITEM, 
+		"Name=seatPref", "Value=None", ENDITEM, 
+		"Name=reserveFlights.x", "Value=73", ENDITEM, 
+		"Name=reserveFlights.y", "Value=13", ENDITEM, 
+		LAST);
+
+	/* Continue3_2 */
+
+	web_submit_data("reservations.pl_6", 
+		"Action={Host}/cgi-bin/reservations.pl", 
+		"Method=POST", 
+		"TargetFrame=", 
+		"RecContentType=text/html", 
+		"Referer={Host}/cgi-bin/reservations.pl", 
+		"Snapshot=t10.inf", 
+		"Mode=HTML", 
+		ITEMDATA, 
+		"Name=firstName", "Value=Jojo", ENDITEM, 
+		"Name=lastName", "Value=Bean", ENDITEM, 
+		"Name=address1", "Value=", ENDITEM, 
+		"Name=address2", "Value=", ENDITEM, 
+		"Name=pass1", "Value=Jojo Bean", ENDITEM, 
+		"Name=creditCard", "Value=", ENDITEM, 
+		"Name=expDate", "Value=", ENDITEM, 
+		"Name=oldCCOption", "Value=", ENDITEM, 
+		"Name=numPassengers", "Value=1", ENDITEM, 
+		"Name=seatType", "Value=Coach", ENDITEM, 
+		"Name=seatPref", "Value=None", ENDITEM, 
+		"Name=outboundFlight", "Value=010;386;04/01/2021", ENDITEM, 
+		"Name=advanceDiscount", "Value=0", ENDITEM, 
+		"Name=returnFlight", "Value=", ENDITEM, 
+		"Name=JSFormSubmit", "Value=off", ENDITEM, 
+		"Name=.cgifields", "Value=saveCC", ENDITEM, 
+		"Name=buyFlights.x", "Value=20", ENDITEM, 
+		"Name=buyFlights.y", "Value=10", ENDITEM, 
+		LAST);
+	
+	return 0;
+}
