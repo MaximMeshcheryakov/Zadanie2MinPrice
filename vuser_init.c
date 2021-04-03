@@ -1,16 +1,12 @@
 vuser_init()
 {
-	/*Correlation comment - Do not change!  Original value='131001.666828676zHDiDQipcDHftAtDApDiQtcf' Name ='userSession' Type ='ResponseBased'*/
-	web_reg_save_param_attrib(
-		"ParamName=userSession",
-		"TagName=input",
-		"Extract=value",
-		"Name=userSession",
-		"Type=hidden",
-		SEARCH_FILTERS,
-		"IgnoreRedirections=No",
-		"RequestUrl=*/nav.pl*",
-		LAST);
+
+	web_reg_save_param_ex(
+    	"ParamName=userSession", 
+    	"LB/IC=name=\"userSession\" value=\"",
+   		"RB/IC=\"",
+   	 	"Ordinal=1",
+	LAST);
 
 	web_url("WebTours", 
 		"URL={Host}/WebTours", 
@@ -34,8 +30,8 @@ vuser_init()
 		"Mode=HTML",
 		ITEMDATA,
 		"Name=userSession", "Value={userSession}", ENDITEM,
-		"Name=username", "Value=jojo", ENDITEM,
-		"Name=password", "Value=bean", ENDITEM,
+		"Name=username", "Value={username}", ENDITEM,
+		"Name=password", "Value={password}", ENDITEM,
 		"Name=JSFormSubmit", "Value=off", ENDITEM,
 		"Name=login.x", "Value=50", ENDITEM,
 		"Name=login.y", "Value=13", ENDITEM,

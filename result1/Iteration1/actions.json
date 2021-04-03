@@ -5,14 +5,14 @@
             {
                 "stepId": "STEP3",
                 "stepName": "Url: Itinerary Button",
-                "infFile": "t4.inf",
-                "time": 1617361440626
+                "infFile": "t3.inf",
+                "time": 1617471005022
             },
             {
                 "stepId": "STEP4",
                 "stepName": "Submit Data: itinerary.pl",
-                "infFile": "t5.inf",
-                "time": 1617361440892
+                "infFile": "t4.inf",
+                "time": 1617471005270
             }
         ],
         "transactions": []
@@ -23,8 +23,8 @@
             {
                 "stepId": "STEP5",
                 "stepName": "Url: Itinerary Button",
-                "infFile": "t6.inf",
-                "time": 1617361441073
+                "infFile": "t5.inf",
+                "time": 1617471005464
             }
         ],
         "transactions": []
