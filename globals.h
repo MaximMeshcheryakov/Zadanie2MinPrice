@@ -10,10 +10,4 @@
 //--------------------------------------------------------------------
 // Global Variables
 int min=0;
-char* n;
-int i=1;
-int num=0;
-int ncount;
-char* numstr;
-char characterset[3];
 #endif // _GLOBALS_H

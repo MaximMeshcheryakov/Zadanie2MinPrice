@@ -1,7 +1,7 @@
 Action.c(41): Total Number of tickets=3
-Action.c(42): Price ticket 1=773
-Action.c(43): Price ticket 2=565
-Action.c(44): Price ticket 3=431
-Action.c(62): Num Min Price ticket=3
-Action.c(63): Min Price ticket=431
+Action.c(42): Price ticket 1=448
+Action.c(43): Price ticket 2=286
+Action.c(44): Price ticket 3=338
+Action.c(62): Num Min Price ticket=2
+Action.c(63): Min Price ticket=286
 TotalNumber.c(21): Total Number of tickets= 2
